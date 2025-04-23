@@ -1,5 +1,5 @@
 body{
-    /* background-color: #F5F5F5; */
+    
     font-family: 'Poppins', sans-serif;
 }
 img{
@@ -49,9 +49,6 @@ input::placeholder {
 
 .homePage{
     background-color: #1e4e28;
-  
-    /* color: white; */
-    /* font-family: 'Poppins', sans-serif; */
 }
 .nav{
     background: #296937;
