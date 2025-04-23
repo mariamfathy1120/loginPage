@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/media.css">
+</head>
+
+<body class="vh-100 d-flex align-items-center justify-content-center ">
+    <form class="container bg-white rounded-3 w-100 " id="signUpContainer">
+        <div class="row">
+            <div class="col-md-6  d-flex flex-column justify-content-center align-items-center">
+                <h3 class="mb-4">Smart Login System</h3>
+                <div class="w-75">
+                    <div class="mb-3">
+                        <label for="name" class="">Name</label>
+                        <input type="text"oninput="validateAllInputs(this)" class="form-control rounded-3 " id="name" placeholder="Enter your name">
+                        <small class="text-danger d-none">Name must be 3-15 characters (lowercase letters, numbers, _ or - only)</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="">Email</label>
+                        <input type="email" oninput="validateAllInputs(this)"  class="form-control" id="email" placeholder="Enter your email">
+                        <small class="text-danger d-none">Please enter a valid email address (e.g. example@mail.com)</small>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="">Password</label>
+                        <input type="password" oninput="validateAllInputs(this)" class="form-control" id="password" placeholder="Enter password">
+                        <small class="text-danger d-none">Password must be at least 8 characters, include uppercase, lowercase, number, and special character</small>
+
+                    </div>
+                    <small class="text-danger d-none userExistAlert ">email already exists</small>
+                    <small class="text-danger d-none fillInAlert ">Please fill in all fields</small>
+                    <button type="button" class="signup-btn rounded-4 w-100 py-1 mt-3 text-white" id="signUpBtn">Sign Up</button>
+                    <div class="text-center mt-3">
+                        <p class="signup-title">You have an account? <a href="login.html" class="signInAnchor">Sign in</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 pe-0">
+                <div class="imgContainer ">
+                    <img src="./images/img.png" alt="" class="w-100">
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

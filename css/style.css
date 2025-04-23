@@ -1,0 +1,77 @@
+body{
+    /* background-color: #F5F5F5; */
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-height: 500px;
+  
+}
+h3{
+    background: linear-gradient(to right, #3ca55c, #1e4e28);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.signup-btn,.loginBtn{
+    background-color: #3A5B22;
+    border:none;
+}
+.signup-btn:hover {
+    background-color: #456829;
+}
+input:focus{
+    border:1px solid rgb(56, 185, 56)!important ;
+    box-shadow: 0 0 5px #3ed36a !important;
+}
+label {
+    color:#1e4e28;
+    font-weight: 600;
+    font-size: 15px;
+}
+input::placeholder {
+  
+    font-size: 14px;
+    padding-left: 0px;
+    opacity: 1 !important;
+}
+.signup-title {
+    color:#15311b;
+ 
+}
+.signup-title a{
+    color: #3ca55c;
+    text-decoration: none;
+ 
+}
+.signup-title a:hover {
+    text-decoration: underline;
+    text-decoration-color: #3ca55c;
+}
+
+.homePage{
+    background-color: #1e4e28;
+  
+    /* color: white; */
+    /* font-family: 'Poppins', sans-serif; */
+}
+.nav{
+    background: #296937;
+}
+h4{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.logoutBtn{
+    border-color:white;
+    padding: 15px  30px;
+    color: white;
+    background-color: #1e4e28; 
+
+}
+.hellomsg{
+    position: relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-100%);
+    background: #296937;
+}

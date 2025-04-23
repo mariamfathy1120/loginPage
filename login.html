@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/media.css">
+</head>
+
+<body class="vh-100 d-flex align-items-center justify-content-center ">
+    <div class="container bg-white rounded-3 w-100 " id="lodinContainer">
+        <div class="row">
+            <div class="col-md-6  d-flex flex-column justify-content-center align-items-center">
+                <h3 class="mb-4">Smart Login System</h3>
+                <form class="w-75">
+                    <div class="mb-3">
+                        <label for="email" class="">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="">Password</label>
+                        <input type="password" class="form-control" id="loginPassword"
+                            placeholder="Enter your password">
+                    </div>
+                    <small class="text-danger d-none fillInAlertlLogin ">Please fill in all fields</small>
+                    <small class="text-danger d-none mismatchAlert">incorrect email or password</small>
+                    <button type="submit" class="loginBtn rounded-4 w-100 py-1 mt-3 text-white">Login</button>
+                    <div class="text-center mt-3">
+                        <p class="signup-title">Don’t have an account? <a href="index.html">Sign Up</a></p>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-md-6 pe-0">
+                <div class="imgContainer ">
+                    <img src="./images/img.png" alt="" class="w-100">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+@media screen and (max-width: 767px) {
+    .imgContainer {
+        display: none; 
+    }
+    body{
+        background-color: white;
+    }
+
+    .container {
+        padding: 15px; 
+    }
+
+    .form {
+        width: 100%; 
+    }
+}
