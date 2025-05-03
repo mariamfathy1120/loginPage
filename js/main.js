@@ -56,7 +56,7 @@ function addUser() {
   } else {
     fillInAlert.classList.add("d-none");
   }
-  if (!isUserEmailExist(newUser.email)) {
+  if (!isUserEmailExist(newUser.email)&& !validateAllInputs(newUser) ) {
     userExistAlert.classList.add("d-none");
     usersArray.push(newUser);
     localStorage.setItem("usersArray", JSON.stringify(usersArray));
@@ -78,11 +78,13 @@ function validateAllInputs(elem) {
     elem.classList.add("is-valid");
     elem.classList.remove("is-invalid");
     elem.nextElementSibling.classList.replace("d-block", "d-none");
+    return true;
   } else {
     console.log("no match");
     elem.classList.add("is-invalid");
     elem.classList.remove("is-valid");
     elem.nextElementSibling.classList.replace("d-none", "d-block");
+    return false
   }
 }
 function isUserEmailExist(userEmail) {
